@@ -12,6 +12,11 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+img {
+  width: 210px;
+  height: 295px;
+  object-fit: cover;
+}
 /*Utilts*/
 .container {
   max-width: 1180px;
@@ -112,4 +117,43 @@ body {
 .alert-info {
   background: #d7eafe;
   border: 1px solid #0523b7;
+}
+
+/*Homepage styling*/
+.Homepage_list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+/*listitem styling*/
+.Listitem {
+  text-decoration: none;
+  width: 210px;
+  background: var(--offwhite);
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
+    0 3px 1px 0 rgba(20, 23, 28, 0.1);
+  cursor: pointer;
+  margin: 1rem auto;
+  display: inline-block; /*this is required becauce of a tag*/
+}
+
+.Listitem:hover {
+  transform: scale(1.05);
+}
+/* .Listitem_img
+
+ */
+
+.Listitem_info {
+  color: var(--dark-color);
+  text-align: center;
+}
+
+.Listitem_name {
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.Listitem_rating {
+  color: var(--secondary-color);
+  padding: 5px;
 }

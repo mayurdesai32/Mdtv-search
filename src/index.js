@@ -1,12 +1,15 @@
 import React, { createContext } from 'react';
 import ReactDOM from 'react-dom';
 import ShowsState from './context/show/ShowsState';
-// import './index.css';
+import AlertsState from './context/alert/AlertsState';
+import './index.css';
 import App from './App';
 
 ReactDOM.render(
   <ShowsState>
-    <App />
+    <AlertsState>
+      <App />
+    </AlertsState>
   </ShowsState>,
   document.getElementById('root')
 );
