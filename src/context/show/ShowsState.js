@@ -26,6 +26,15 @@ const ShowsState = (props) => {
     dispatch({ type: SEARCH_SHOWS, payload: data });
   };
 
+  const getsingleshow = async (id) => {
+    dispatch({ type: SET_LOADING });
+    const { data } = await axios.get(`https://api.tvmaze.com/shows/${id}`);
+    console.log(data);
+    dispatch({ type: SET_SINGLE_SHOW, payload: data });
+  };
+  const clearsingleshow = () => {
+    dispatch({ type: CLEAR_SINGLE_SHOW });
+  };
   return (
     <ShowsContext.Provider
       value={{
@@ -33,6 +42,8 @@ const ShowsState = (props) => {
         singleShow: state.singleShow,
         loading: state.loading,
         searchShows,
+        getsingleshow,
+        clearsingleshow,
       }}
     >
       {props.children}

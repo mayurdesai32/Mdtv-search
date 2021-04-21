@@ -157,3 +157,31 @@ img {
   color: var(--secondary-color);
   padding: 5px;
 }
+/*Singlepage style*/
+
+.Singleshow {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.Singleshow > img {
+  margin-right: 2rem;
+}
+
+.Singleshow_info p {
+  margin: 1rem;
+}
+
+.Singleshow_genre {
+  display: inline-block;
+  border-radius: 15px;
+  margin: 0.5rem 1rem 0.5rem 0;
+  padding: 10px 17px;
+  background: var(--secondary-color);
+  color: var(--offwhite);
+}
+/*Loader styling*/
+.Loader img {
+  display: block;
+  margin: 2rem auto;
+}
