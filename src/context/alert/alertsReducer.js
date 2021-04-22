@@ -1,6 +1,4 @@
 import { SET_ALERT, REMOVE_ALERT } from '../types';
-import React from 'react';
-
 const alertsReducer = (state, action) => {
   switch (action.type) {
     case SET_ALERT:

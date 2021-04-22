@@ -6,19 +6,20 @@ import Navbar from './components/Navbar';
 import Homepage from './components/pages/Homepage';
 import Aboutpage from './components/pages/Aboutpage';
 import Singlepage from './components/pages/Singlepage';
+import Footer from './components/pages/Footer';
 
 const App = () => {
   return (
     <Router>
       <Navbar />
-
-      <div className='container'>
+      <div className='main_container'>
         <Switch>
           <Route exact path='/' component={Homepage} />
           <Route exact path='/about' component={Aboutpage} />
           <Route path='/singleshow/:id' component={Singlepage} />
         </Switch>
       </div>
+      <Footer />
     </Router>
   );
 };

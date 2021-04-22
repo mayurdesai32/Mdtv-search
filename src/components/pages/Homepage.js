@@ -29,7 +29,7 @@ const Homepage = () => {
           ))}
         </div>
       )}
-      Homepage
+      {/* Homepage */}
     </div>
   );
 };

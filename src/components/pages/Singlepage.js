@@ -1,13 +1,12 @@
 import React, { useEffect, useContext } from 'react';
 import showsContext from '../../context/show/showsContext';
-import image1 from '../image/images2.png';
+import image1 from '../image/imagenotfound.png';
 import Loader from '../Loader';
 const Singlepage = ({ match }) => {
-  const { loading, getsingleshow, clearsingleshow, singleShow } = useContext(
-    showsContext
-  );
+  const { loading, getsingleshow, singleShow } = useContext(showsContext);
   useEffect(() => {
     getsingleshow(match.params.id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const removeTags = (text) => {
@@ -58,7 +57,7 @@ const Singlepage = ({ match }) => {
           </div>
         </div>
       )}
-      Singlepage
+      {/* Singlepage */}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React, { createContext } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import ShowsState from './context/show/ShowsState';
 import AlertsState from './context/alert/AlertsState';
