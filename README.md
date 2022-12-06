@@ -6,4 +6,7 @@ Axios AJAX Request
 TVMAZE API (https://www.tvmaze.com/api)
 React Router
 React Context API
-Deploying to HEROKU
+Deploying to netlify
+
+
+visit on https://mdtv.netlify.app/
