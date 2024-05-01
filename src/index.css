@@ -9,24 +9,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
 img {
   width: 210px;
   height: 295px;
   object-fit: cover;
 }
+
 /*Utilts*/
 .container {
   max-width: 1280px;
   margin: auto;
 }
+
 .main_container {
   max-width: 1180px;
   margin: auto;
   min-height: 63vh;
 }
+
 .btn {
   padding: 10px 17px;
   border: 1px solid var(--dark-color);
@@ -40,25 +45,30 @@ img {
 .btn:hover {
   color: var(--secondary-color);
 }
+
 .btn-block {
   display: block;
   width: 100%;
 }
+
 /*navbar styles*/
 .navbar {
   padding: 1rem;
   background: var(--dark-color);
 }
+
 .navbar__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .nav__brand a {
   font-size: 1.4rem;
   color: var(--offwhite);
   text-decoration: none;
 }
+
 .nav__brand_text {
   padding-left: 8px;
 }
@@ -72,6 +82,7 @@ img {
   list-style: none;
   align-items: center;
 }
+
 .links__link a {
   display: block;
   padding: 1rem;
@@ -93,6 +104,7 @@ img {
   background: var(--dark-color);
   color: var(--offwhite);
 }
+
 .Footer_link {
   display: flex;
   list-style: none;
@@ -119,7 +131,8 @@ img {
   width: 100%;
   margin: 2rem 0;
 }
-.Searchbar__form > input {
+
+.Searchbar__form>input {
   width: 100%;
   padding: 10px 17px;
   border: 1px solid var(--dark-color);
@@ -129,10 +142,11 @@ img {
   outline-width: 0ch;
 }
 
-.Searchbar__form > input:focus {
+.Searchbar__form>input:focus {
   border: 1px solid var(--secondary-color);
   box-shadow: 0 0 1px 1px rgba(60, 148, 139, 0.5);
 }
+
 /*alert styles*/
 .alert {
   padding: 10px 17px;
@@ -150,6 +164,7 @@ img {
   background: #ffc4c4;
   border: 1px solid #ff0000;
 }
+
 .alert-info {
   background: #d7eafe;
   border: 1px solid #0523b7;
@@ -161,25 +176,7 @@ img {
   grid-template-columns: repeat(5, 1fr);
 }
 
-@media only screen and (max-width: 658px) {
-  .Homepage_list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media only screen and (min-width: 658px) and (max-width: 958px) {
-  .Homepage_list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media only screen and (min-width: 958px) and (max-width: 1200px) {
-  .Homepage_list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
 /*listitem styling*/
 .Listitem {
   text-decoration: none;
@@ -189,12 +186,14 @@ img {
     0 3px 1px 0 rgba(20, 23, 28, 0.1);
   cursor: pointer;
   margin: 1rem auto;
-  display: inline-block; /*this is required becauce of a tag*/
+  display: inline-block;
+  /*this is required becauce of a tag*/
 }
 
 .Listitem:hover {
   transform: scale(1.05);
 }
+
 /* .Listitem_img
 
  */
@@ -213,16 +212,20 @@ img {
   color: var(--secondary-color);
   padding: 5px;
 }
+
 /*Singlepage style*/
 
 .Singleshow {
   display: flex;
-  margin: 2rem 0;
+  margin: 2rem 2rem;
+
 }
 
-.Singleshow > img {
+.Singleshow>img {
   margin-right: 2rem;
 }
+
+
 
 .Singleshow_info p {
   margin: 1rem;
@@ -236,6 +239,7 @@ img {
   background: var(--secondary-color);
   color: var(--offwhite);
 }
+
 /*Loader styling*/
 .Loader img {
   display: block;
@@ -258,12 +262,98 @@ img {
   margin: auto;
 }
 
-.about__info > p {
+.about__info>p {
   font-size: 1.4rem;
   margin: 1rem 0;
 }
 
-.about__info > div > ul > li {
+.about__info>div>ul>li {
   margin-left: 2rem;
   padding: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 958px) and (max-width: 1200px) {
+  .Homepage_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 658px) and (max-width: 958px) {
+  .Homepage_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 658px) {
+  .Homepage_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* .Homepage_list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  } */
+
+  .Singleshow {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+
+  .Singleshow_info {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+
+  .Singleshow_genre {
+    margin-top: 1rem;
+  }
+
+
+
+
+  .Singleshow_info p {
+    text-align: left;
+    margin: 1rem 0rem;
+  }
+
+
+  .Singleshow>img {
+    margin-right: 0;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 444px) {
+  .Homepage_list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Singleshow>img {
+    margin-right: 0;
+  }
+
 }
