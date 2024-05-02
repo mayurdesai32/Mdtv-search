@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import showsContext from '../context/show/showsContext';
 import Alert from './Alert';
-import AlertsContext from '../context/alert/AlertsContext';
+import AlertsContext from '../context/alert/AlertsContexts';
 const Searchbar = () => {
   const [searchTerm, setSearchTerm] = useState('');
   let { searchShows } = useContext(showsContext);

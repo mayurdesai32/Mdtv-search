@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ShowsState from './context/show/ShowsState';
-import AlertsState from './context/alert/AlertsState';
+import AlertsStates from './context/alert/AlertsStates';
 import './index.css';
 import App from './App';
 
 ReactDOM.render(
   <ShowsState>
-    <AlertsState>
+    <AlertsStates>
       <App />
-    </AlertsState>
+    </AlertsStates>
   </ShowsState>,
   document.getElementById('root')
 );
